@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d62a56434.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#domains">Domains</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1><span class="color-wave"><b>Nayeer Naushad</b></span></h1>
+            <p class="color-wave2">Machine Learning | Data Analyst</p>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="file.png" alt="About Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="paragraph">
+                    I’m Nayeer Naushad, currently pursuing a B.Tech in Computer Science & Engineering, graduating in 2025. My academic journey is complemented by hands-on experience in machine learning, data engineering, and artificial intelligence. I have completed significant projects, including developing the Gemini ChatBot, an advanced AI-driven conversational agent, and Intelligent Traffic Control with Deep Learning, which optimizes urban traffic flow. My research on "AI-Driven Support in the Metaverse" integrates ChatGPT, Graph Theory, and NLP to enhance virtual interactions and support systems.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages:-</span><br><span style="font-size: smaller; color: #d3dded;">Python, Java, C, C++, HTML, CSS, Javascript</span></li>
+                        <li><span>Tools:-</span><br><span style="font-size: smaller; color: #d3dded;">PySpark, Colab, GitHub, Jupyter, Anaconda, PyCharm</span></li>
+                        <li><span>Data Storage and Cloud:-</span><br><span style="font-size: smaller; color: #d3dded;">MySQL, Amazon Web Services, SQL, Google Cloud Platform, Drop Box</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Premier Blockchain Summer Intern</span><br><span style="font-size: smaller; color: #d3dded;">Timechain Summer of Code</span></li>
+                        <li><span>Research Intern</span><br><span style="font-size: smaller; color: #d3dded;">Kalinga Institute of Industrial Technology</span></li>
+                        <li><span>Data Analyst</span><br><span style="font-size: smaller; color: #d3dded;">Oasis Infobyte</span></li>
+                        <li><span>HeadStarter</span><br><span style="font-size: smaller; color: #d3dded;">7-week SWE Fellowship</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>German Academy of Digital Education</span><br><span style="font-size: smaller; color: #d3dded;">Summer University - 2024</span></li>
+                        <li><span>Kalinga Institute of Industrial Technology, Bhubaneshwar, India</span><br><span style="font-size: smaller; color: #d3dded;">Bachelor Of Technology (Computer Science and Engineering)</span></li>
+                        <li><span>D.A.V. Public School, Dhurwa, Ranchi</span><br><span style="font-size: smaller; color: #d3dded;">High School</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------My Domains----------- -->
+ <div id="domains">
+    <div class="container">
+        <h1 class="sub-title">Domains</h1>
+        <div class="domains-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Machine Learning</h2>
+                <p>Experienced in the entire machine learning lifecycle, from data preprocessing to model deployment. Proficient in various algorithms, including regression, clustering, and neural networks. Skilled with tools like Google Colab and Kaggle for model tuning. Currently focusing on deep learning and reinforcement learning to address complex problems and drive innovation.</p>
+                <!-- <a href="#">Learn More...</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analyst</h2>
+                <p>Skilled in converting raw data into actionable insights through analysis and visualization. Proficient with data cleaning, statistical analysis, and tools like Excel, SQL, Python (Pandas, Matplotlib). Adept at creating dashboards and reports using Tableau and Power BI. Focused on leveraging data to optimize processes and support decision-making.</p>
+                <!-- <a href="#">Learn More...</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Dynatrace</h2>
+                <p>Dynatrace offers comprehensive monitoring and performance management with AI-driven anomaly detection and root cause analysis. It provides end-to-end visibility into application performance and infrastructure across multi-cloud environments. Features include real-time monitoring, advanced analytics, and automated issue diagnosis, helping organizations enhance reliability, user satisfaction, and efficiency.</p>
+                <!-- <a href="#">Learn More...</a> -->
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+ <!-- Project -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1> 
+        <div class="project-list">
+            <div class="list">
+                <img src="1pr.jpg" >
+                <div class="layer">
+                    <h3>Generative Adversarial Network</h3>
+                    <p>Developed and trained a GAN model to generate high-quality synthetic data. Tuned the generator and discriminator to enhance realism and accuracy, resulting in improved data generation and successful adversarial learning.</p>
+                    <a href="https://github.com/nayeer1169/Generative_adversarial_networks"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="list">
+                <img src="2pr.jpg" >
+                <div class="layer">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Designed and implemented a movie recommendation system using collaborative filtering and content-based techniques. Integrated user preferences and movie attributes to deliver personalized recommendations, enhancing user experience with relevant film suggestions.</p>
+                    <a href="https://github.com/nayeer1169/Movie-Recommend-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="list">
+                <img src="3pr.jpg" >
+                <div class="layer">
+                    <h3>Emergency Vehicle Classification</h3>
+                    <p>Developed a machine learning model to classify emergency vehicles in real-time using image recognition. Implemented feature extraction and model training to accurately detect and categorize vehicles for efficient emergency response.</p>
+                    <a href="https://github.com/nayeer1169/Emegency_vehicle_classification"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+            
+        
+        
+</div>
+
+<!-- ----------contacts---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nayeer.naushad786@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-6203264124</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nayeer-naushad-49ab83224/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nayeer1169"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/th_king_1169/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/RanchikaL"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+                <a href="Resume_v3.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<script>
+    function opentab(event, tabname) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // Remove active link and tab from all tabs
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Add active link to the clicked tab
+        event.currentTarget.classList.add("active-link");
+
+        // Show the corresponding tab content
+        var activeTabContent = document.getElementById(tabname);
+        if (activeTabContent) {
+            activeTabContent.classList.add("active-tab");
+        }
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
